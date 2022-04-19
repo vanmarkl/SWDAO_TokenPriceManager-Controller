@@ -4,7 +4,7 @@ pragma solidity ^0.8.12;
 import "ds-test/test.sol";
 import "../TokenPriceManager.sol";
 import "../TokenPriceController.sol";
-import {ITokenPriceManagerMinimal} from "../ITokenPriceManagerMinimal.sol";
+import {ITokenPriceManagerMinimal} from "../interfaces/ITokenPriceManagerMinimal.sol";
 
 interface Hevm {
     function warp(uint256) external;
