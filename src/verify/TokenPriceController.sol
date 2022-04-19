@@ -212,42 +212,6 @@ interface ITokenPriceManagerMinimal {
 
 
 /******************************************************************************
-* File:     IERC20Metadata.sol
-* Author:   OpenZeppelin
-* Location: https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/
-*           contracts/token/ERC20/extensions/IERC20Metadata.sol
-* Requires: IERC20.sol
-* License:  MIT
-******************************************************************************/
-
-/**
- * @dev Interface for the optional metadata functions from the ERC20 standard.
- *
- * _Available since v4.1._
- */
-interface IERC20Metadata is IERC20 {
-    /**
-     * @dev Returns the name of the token.
-     */
-    function name() external view returns (string memory);
-
-    /**
-     * @dev Returns the symbol of the token.
-     */
-    function symbol() external view returns (string memory);
-
-    /**
-     * @dev Returns the decimals places of the token.
-     */
-    function decimals() external view returns (uint8);
-}
-
-/*****************************************************************************/
-
-
-
-
-/******************************************************************************
 * File:     IERC20.sol
 * Author:   OpenZeppelin
 * Location: https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/
@@ -331,6 +295,42 @@ interface IERC20 {
      * a call to {approve}. `value` is the new allowance.
      */
     event Approval(address indexed owner, address indexed spender, uint256 value);
+}
+
+/*****************************************************************************/
+
+
+
+
+/******************************************************************************
+* File:     IERC20Metadata.sol
+* Author:   OpenZeppelin
+* Location: https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/
+*           contracts/token/ERC20/extensions/IERC20Metadata.sol
+* Requires: IERC20.sol
+* License:  MIT
+******************************************************************************/
+
+/**
+ * @dev Interface for the optional metadata functions from the ERC20 standard.
+ *
+ * _Available since v4.1._
+ */
+interface IERC20Metadata is IERC20 {
+    /**
+     * @dev Returns the name of the token.
+     */
+    function name() external view returns (string memory);
+
+    /**
+     * @dev Returns the symbol of the token.
+     */
+    function symbol() external view returns (string memory);
+
+    /**
+     * @dev Returns the decimals places of the token.
+     */
+    function decimals() external view returns (uint8);
 }
 
 /*****************************************************************************/
