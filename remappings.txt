@@ -1,4 +1,4 @@
 ds-test/=lib/ds-test/src/
-@tokensets/=lib/set-protocol-v2/
+@tokensets/=lib/set-protocol/
 @openzeppelin/=lib/openzeppelin-contracts/
 @chainlink/=lib/chainlink/contracts/
