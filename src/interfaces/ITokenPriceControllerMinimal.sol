@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: Apache License 2.0
-pragma solidity ^0.8.0;
+pragma solidity >=0.5.0;
 
 /// @title Address database for TokenPriceManagers
 /// @author Peter T. Flynn
