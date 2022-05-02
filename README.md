@@ -7,6 +7,7 @@
 [fc]: https://book.getfoundry.sh/reference/forge/forge-create.html
 [fi]: https://github.com/foundry-rs/foundry#installation
 [foundry]: https://github.com/foundry-rs/foundry
+[here]: https://peter-flynn.github.io/SWDAO_TokenPriceManager-Controller/
 [ITokenPriceManager.sol]: contracts/interfaces/ITokenPriceManager.sol
 [itpc]: contracts/interfaces/ITokenPriceControllerMinimal.sol
 [itpm]: contracts/interfaces/ITokenPriceManagerMinimal.sol
@@ -35,8 +36,7 @@ Custom solution for centralizing pricing information – allowing for price call
 > Code paths exist within the current version, which are inaccessible, that were designed to request pricing information directly from the TokenSets oracle. The oracle was found to be inadequate for the needs of this project, but functions have been left in place for compatibility with a future implementation of TokenSet pricing. TokenPriceManagers may not be initiated in "TokenSet mode" in the current version.
 
 ## Usage
-> Documentation at this time is minimal: just enough to facilitate audits.<br />
-> More "user-friendly" documentation is in the works.
+> Further documentation can be found [here][], as well as in the heavily-commented source code for each contract.
 ### [Manager][tpm]
 Token Price Managers (TPMs) are designed to create an easy interface for retrieving and maintaining the price of a given token. These are especially helpful in manually setting the price of structured products, or any other tokens which cannot find a market price through on-chain information. When requesting pricing from TPMs, or using services which request pricing from TPMs, **one must make sure that they trust the operators of these contracts to report truthful/accurate information**.
 

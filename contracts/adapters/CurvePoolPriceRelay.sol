@@ -46,10 +46,10 @@ contract CurvePoolPriceRelay is ITokenPriceManagerMinimal {
 		if (price == 0) revert BadPrice();
 	}
 
-    /// @return address The token which is being priced
-    function getTokenPrimary() external view returns (address) { return address(tokenPrimary); }
+	/// @return address The token which is being priced
+	function getTokenPrimary() external view returns (address) { return address(tokenPrimary); }
 
-    /// @return address Always address(0), indicating that the price is in USD,
+	/// @return address Always address(0), indicating that the price is in USD,
 	/// in accordance with the ITokenPriceManager interface
-    function getTokenDenominator() external pure returns (address) { return address(0); }
+	function getTokenDenominator() external pure returns (address) { return address(0); }
 }
